@@ -27,6 +27,18 @@ module CustomWorld
     page.driver.browser.close
   end
 
+  #def get_slot_id
+    #@cookie = get_me_the_cookie('remember_token')
+    #slot = Curl.get("https://service-staging.mokapos.com/account/v1/slots?active=true&keyword=&includeMe=false") do |employee|
+      #employee.headers['Content-Type'] = 'application/json'
+      #employee.headers['User-Agent'] = 'capybara'
+      #employee.headers['Authorization'] = "#{@cookie[:value]}"
+  #end
+
+  #@slot = JSON.parse slot.body
+  #@slot_id = @slot[i]["id"]
+
+  #end
 end
 
 World(CustomWorld)
