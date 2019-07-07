@@ -6,6 +6,7 @@ require_relative 'helpers/test_gratuity/button_gratuity'
 require_relative 'helpers/test_gratuity/field_gratuity'
 require_relative 'helpers/test_tax/field_tax'
 require_relative 'helpers/test_tax/button_tax'
+require_relative 'helpers/billing_helper/billing_helper'
 
 module Helper
   include AutomationHelper
@@ -16,6 +17,7 @@ module Helper
   include ButtonLibGratuity
   include ButtonLibTax
   include FieldLibTax
+  include BillingHelper
 end
 
 

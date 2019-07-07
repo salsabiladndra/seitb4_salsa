@@ -3,7 +3,7 @@ Given(/^i access moka backoffice$/) do
 end
 
 When(/^i fill email and password$/) do
-  fill_in('Email or phone number', :with => 'pastapizza@mailinator.com')
+  fill_in('Email or phone number', :with => 'rumahcupcake1@mailinator.com')
   fill_in('Password', :with => '123456')
 end
 
