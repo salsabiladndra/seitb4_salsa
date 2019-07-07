@@ -3,6 +3,7 @@ require 'capybara/rspec'
 require 'rspec/core'
 require 'uri'
 require "selenium/webdriver"
+# require 'curb'
 
 Capybara.register_driver :selenium_chrome do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
@@ -11,7 +12,7 @@ end
 Capybara.default_driver = :selenium_chrome
 Capybara.javascript_driver = :selenium_chrome
 
-Capybara.default_max_wait_time = 50
+Capybara.default_max_wait_time = 20
 
 module Capybara
   class << self
@@ -29,5 +30,6 @@ end
 #   Capybara.current_driver = browser_name
 #   @driver.quit
 # end
+#test pull request
 
 Capybara.current_driver = :selenium_chrome
